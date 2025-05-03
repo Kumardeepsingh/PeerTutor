@@ -1,0 +1,174 @@
+
+.quick-actions {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.action-card {
+    background-color: white;
+    border-radius: 10px;
+    padding: 1.5rem;
+    box-shadow: var(--shadow);
+    text-align: center;
+    text-decoration: none;
+    color: var(--dark);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.action-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.action-icon {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.action-text {
+    font-weight: 600;
+}
+
+/* Tutor Cards */
+.tutors-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1.5rem;
+}
+
+.tutor-card {
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 1.5rem;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+.tutor-info {
+    flex: 1;
+}
+
+.tutor-info h3 {
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    color: var(--dark);
+}
+
+.tutor-subject {
+    color: var(--gray);
+    margin-bottom: 0.75rem;
+    font-size: 0.875rem;
+}
+
+.tutor-rating {
+    margin-bottom: 0.75rem;
+}
+
+.rating-count {
+    color: var(--gray);
+    font-size: 0.75rem;
+    margin-left: 0.25rem;
+}
+
+.tutor-rate {
+    font-weight: bold;
+    color: var(--dark);
+    margin-bottom: 1rem;
+}
+
+.tutor-actions {
+    display: flex;
+    gap: 0.5rem;
+}
+
+/* Subject badges with find tutor link */
+.find-tutor-link {
+    color: var(--primary);
+    font-size: 0.75rem;
+    margin-left: 0.5rem;
+    opacity: 0;
+    transition: opacity 0.3s;
+    text-decoration: none;
+}
+
+.subject-badge:hover .find-tutor-link {
+    opacity: 1;
+}
+
+/* Status indicators */
+.status {
+    display: inline-block;
+    padding: 0.25rem 0.75rem;
+    border-radius: 20px;
+    font-size: 0.75rem;
+    font-weight: 600;
+}
+
+.status-completed {
+    background-color: rgba(46, 204, 113, 0.1);
+    color: var(--success);
+}
+
+.status-missed {
+    background-color: rgba(231, 76, 60, 0.1);
+    color: var(--danger);
+}
+
+/* Student info */
+.student-info {
+    color: var(--gray);
+    font-size: 0.875rem;
+    margin-bottom: 1rem;
+}
+
+/* Mobile responsiveness adjustments */
+@media (max-width: 768px) {
+    .tutors-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .quick-actions {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+.status {
+    display: inline-block;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.status-pending {
+    background-color: #fff3cd;
+    color: #856404;
+}
+
+.status-approved {
+    background-color: #d4edda;
+    color: #155724;
+}
+
+.status-completed {
+    background-color: #d1ecf1;
+    color: #0c5460;
+}
+
+.status-missed {
+    background-color: #f8d7da;
+    color: #721c24;
+}
+
+.verification-banner {
+    background-color: #fff3cd;
+    border-left: 4px solid #ffc107;
+    padding: 15px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}

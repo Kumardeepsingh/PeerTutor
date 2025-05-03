@@ -1,0 +1,421 @@
+.booking-container {
+    display: flex;
+    max-width: 1200px;
+    margin: 80px auto;
+    gap: 30px;
+}
+
+.tutor-info {
+    flex: 0 0 300px;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    padding: 20px;
+    height: fit-content;
+}
+
+.booking-form {
+    flex: 1;
+    background-color: white;
+    border-radius: 8px;
+    padding: 30px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+.tutor-image {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin: 0 auto 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 36px;
+    color: #555;
+    background-color: #e0e0e0;
+}
+
+.tutor-image img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.tutor-rate {
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.rate-report-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.tutor-bio {
+    margin-bottom: 20px;
+    color: #555;
+    font-size: 14px;
+}
+
+.availability-list {
+    margin-top: 20px;
+}
+
+.availability-item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 8px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #eee;
+}
+
+h4 {
+    margin-bottom: 15px;
+}
+
+.day {
+    font-weight: 500;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.form-control {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.subject-badge {
+    display: inline-block;
+    background-color: #e9f5ff;
+    color: #0066cc;
+    padding: 5px 12px;
+    border-radius: 15px;
+    margin-right: 8px;
+    margin-bottom: 8px;
+    font-size: 14px;
+}
+
+.form-row {
+    display: flex;
+    gap: 15px;
+}
+
+.form-row > div {
+    flex: 1;
+}
+
+.session-summary {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+.summary-item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #eee;
+}
+
+.summary-total {
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+    font-size: 18px;
+    margin-top: 15px;
+}
+
+.alert {
+    padding: 15px;
+    border-radius: 4px;
+    margin-bottom: 20px;
+}
+
+.alert-danger {
+    background-color: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+}
+
+.alert-success {
+    background-color: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+}
+
+.review-list {
+    margin-top: 30px;
+    border-top: 2px solid #eee;
+    padding-top: 20px;
+}
+
+.review-item {
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+}
+
+.review-title {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.review-comment {
+    font-size: 14px;
+    color: #555;
+}
+.tutor-name-container {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.tutor-name-rating-row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 5px;
+    flex-wrap: wrap;
+}
+
+.tutor-name-rating-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 5px;
+}
+
+.tutor-name {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.tutor-rating {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.stars {
+    display: flex;
+    gap: 2px;
+}
+
+.star {
+    color: #FFD700; 
+    font-size: 18px;
+}
+
+.empty-star {
+    color: #ccc;
+    font-size: 18px;
+}
+
+.rating-count {
+    font-size: 14px;
+    color: #666;
+    margin-left: 5px;
+}
+
+.reviews-container {
+    max-height: 500px; 
+    overflow-y: scroll;  
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    
+    
+    scrollbar-width: thin; 
+    scrollbar-color: #888 #f1f1f1; 
+}
+
+.reviews-header {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.reviews-title {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.reviews-amount {
+    font-size: 1rem;
+}
+
+.review-item {
+    border-bottom: 1px solid #eee;
+    padding: 15px 0;
+}
+
+.review-item:last-child {
+    border-bottom: none;
+}
+
+.review-header {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 10px;
+}
+
+.review-student {
+    font-weight: bold;
+    padding-right: 1rem;
+}
+
+.review-subject {
+    color: #666;
+    font-size: 14px;
+    padding-right: 1rem;
+}
+
+.review-date {
+    color: #999;
+    font-size: 13px;
+}
+
+.review-comment {
+    margin-top: 10px;
+    line-height: 1.5;
+}
+
+.no-reviews {
+    text-align: center;
+    padding: 20px;
+    color: #666;
+}
+.tutor-meta {
+    margin-top: 5px;
+}
+
+.completed-sessions {
+    font-size: 14px;
+    color: #666;
+}
+.half-star {
+    position: relative;
+    display: inline-block;
+    font-size: 18px;
+    color: lightgray; 
+}
+
+.half-star::before {
+    content: "★";
+    position: absolute;
+    left: 0;
+    width: 50%;
+    overflow: hidden;
+    color: gold;
+}
+
+.btn-danger{
+    background-color: #e43a4b;
+}
+
+.btn-danger:hover {
+    background-color: #d43545;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.tutor-response {
+    background-color: #f5f5f5;
+    padding: 15px;
+    border-radius: 6px;
+    margin-top: 15px;
+    position: relative;
+}
+
+.tutor-response::before {
+    content: '';
+    position: absolute;
+    top: -10px;
+    left: 20px;
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid #f5f5f5;
+}
+
+.response-header {
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: var(--primary);
+}
+
+.response-date {
+    color: #999;
+    font-size: 0.8rem;
+    margin-bottom: 10px;
+}
+
+.reviews-container {
+    max-height: 500px;
+    overflow-y: auto;
+}
+
+span.separator {
+    margin: 0 5px;
+}
+
+.review-actions .btn {
+    color: white;
+    border: none;
+    padding: 0.3rem 0.8rem;
+    margin-top: 8px;
+    border-radius: 50px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+}
+
+.reported-indicator {
+    color: #6c757d;
+    font-size: 0.9rem;
+    font-style: italic;
+    padding: 5px 10px;
+    border: 1px solid #6c757d;
+    border-radius: 4px;
+    display: inline-block;
+    margin-top: 8px;
+}
+
+button.btn {
+    margin-top: 10px;
+}
+
+.verification-notice {
+    margin-top: 15px;
+    padding: 10px;
+    background-color: #fff3cd;
+    border-left: 4px solid #ffc107;
+    border-radius: 4px;
+}
+
+.verification-notice a {
+    margin-top: 8px;
+    display: inline-block;
+}

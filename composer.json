@@ -1,0 +1,15 @@
+{
+    "name": "kumar/project1",
+    "autoload": {
+        "psr-4": {
+            "Kumar\\Project1\\": "src/"
+        }
+    },
+    "require": {
+        "stripe/stripe-php": "^16.6",
+        "guzzlehttp/guzzle": "^7.9",
+        "firebase/php-jwt": "^6.11",
+        "phpmailer/phpmailer": "^6.9",
+        "vlucas/phpdotenv": "^5.6"
+    }
+}

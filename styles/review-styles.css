@@ -1,0 +1,135 @@
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    padding-top: 70px; 
+    margin: 0;
+}
+
+h2{
+    margin-top: 2rem;
+    margin-left: 3rem;
+}
+
+form{
+    margin: 1.5rem auto;
+    width: 90%;
+}
+
+p {
+    margin-top: 50px;
+    margin-bottom: 10px;
+}
+
+.container{
+    gap: 2rem;
+}
+
+.rating-container {
+    margin: 20px 0;
+}
+
+.stars {
+    display: inline-block;
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+.star {
+    color: #ccc;
+    cursor: pointer;
+    transition: color 0.2s;
+}
+
+.star:hover, .star.active {
+    color: #FFD700;
+}
+
+.session-option {
+    display: block;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.session-option:hover {
+    background-color: #f5f5f5;
+}
+
+.session-option.selected {
+    background-color: #e3f2fd;
+    border-color: #2196F3;
+}
+
+.session-option input[type="radio"] {
+    margin-right: 10px;
+}
+
+textarea {
+    width: 100%;
+    min-height: 100px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    resize: vertical;
+}
+
+.no-sessions {
+    padding: 20px;
+    text-align: center;
+    color: #666;
+}
+
+.btn {
+    margin-top: 10px;
+}
+
+footer{
+    margin-top: auto;
+    max-height: 330px;
+}
+
+.copyright{
+    padding-top: 15px;
+}
+
+button {
+    border: none;
+    background: var(--light);
+}
+
+.btn-danger{
+    background-color: #e43a4b;
+}
+
+.btn-danger:hover {
+    background-color: #d43545;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.alert {
+    padding: 15px;
+    margin-bottom: 20px;
+    margin: 2rem auto;
+    width: 60%;
+    border-radius: 4px;
+    font-weight: 500;
+    position: relative;
+    border: 1px solid transparent;
+    text-align: center;
+}
+
+.alert-success {
+    background-color: #d4edda;
+    color: #155724;
+    border-color: #c3e6cb;
+}
+
+.alert-danger {
+    background-color: #f8d7da;
+    color: #721c24;
+    border-color: #f5c6cb;
+}
